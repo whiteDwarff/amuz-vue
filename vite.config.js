@@ -8,7 +8,6 @@ export default defineConfig({
   plugins: [
     vue(),
     VueRouter({
-      /* options */
       exclude: ['**/components/**'],
       routesFolder: [
         {
@@ -18,3 +17,4 @@ export default defineConfig({
     }),
   ],
 })
+  

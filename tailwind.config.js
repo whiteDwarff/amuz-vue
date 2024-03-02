@@ -13,7 +13,6 @@ export default {
   plugins: [
     vue(),
     VueRouter({
-      /* options */
       exclude: ['**/components/**'],
       routesFolder: [
         {
