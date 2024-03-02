@@ -1,47 +1,52 @@
 <template>
-  <div class="py-3">
-    <h5 class="text-22 mb-2">메세지 입력</h5>
-     <div class="bg-light-grey" style="width: 90%; padding: 5%;">
+  <div class="py-6">
+    <h5 class="sm:text-xl md:text-2xl font-bold text-left mb-4">메세지 입력</h5>
+     <div class="bg-light-grey pt-6 rounded-lg p-4 border-box">
       <!-- input -->
-      <div class="input-group">
+      <div>
         <input 
           type="text"
-          class="pa-1 border-none text-18 border-box" 
+          class="sm:text-base md:text-lg block w-full" 
           placeholder="제목을 입력해주세요. (단문 SMS는 제외, 최대 30byte)" 
-          style="border-radius: 5px; width: calc(100% - 20px);" 
           @input="$emit('update:title', $event.target.value)" 
         >
       </div>
       <!-- 단문 SMS, byte -->
-      <div class="my-3 flex justify-between align-items-center">
-        <BaseChip label="단문 SMS" :color="true"/>
-        <div class="flex align-items-center">
-          <span class="text-16 color-violet">
-            {{ byteSize }}
-            <span class="text-16 color-grey-4 "> / 90byte</span>
+      <div class="my-3 flex flex-wrap justify-between items-center">
+        <BaseChip label="단문 SMS" :color="true" class="text-white xs:mx-auto sm:mx-0 xs:w-11/12 sm:w-3/6 md:w-5/12 lg:w-28"/>
+        <div class="flex items-center xs:mx-auto xs:mt-3 sm:m-0">
+          <span class="xs:text-[14px] md:text-base text-violet font-bold">
+            {{ byteSize }}&ensp;
           </span>
-          <button class="border-none ml-1 pointer" @click="deleteContet">
-            <img src="/icon/refresh.png" alt="">
+          <span class="xs:text-[14px] md:text-base text-[#8D8D8D] font-bold">/ 90byte</span>
+          <button class="border-none ml-1 p-0 ml-3" @click="deleteContet">
+            <img src="/src/assets/refresh.svg" alt="">
           </button>
         </div>
       </div>
       <!-- textarea -->
-      <div id="input-area" class="my-3 bg-white border-box">
-        <textarea 
-          class="pa-1 full-width border-none text-18"
-          rows="10" placeholder="내용을 입력해 주세요. 90byte 초과 시 장문 문자로,&#13;&#10;이미지 추가 시 포토 문자로 자동 전환 됩니다."
-          style="resize: none; border-radius: 5px; width: calc(100% - 20px); "
-          @input="$emit('update:content', $event.target.value)"
-        ></textarea>
-        <div class="pa-2 flex justify-end">
-          <BaseChip v-for="(chip, index) in chips" :key="index" :label="chip"/>
+      <div class="pb-6 under-line">
+        <div id="input-area" class="rounded-lg bg-white border-box">
+          <textarea 
+            class="sm:text-base md:text-lg border-0"
+            rows="10" placeholder="내용을 입력해 주세요. 90byte 초과 시 장문 문자로,&#13;&#10;이미지 추가 시 포토 문자로 자동 전환 됩니다."
+            style="resize: none; border-radius: 5px; width: calc(100% - 20px); "
+            @input="$emit('update:content', $event.target.value)"
+          ></textarea>
+          <div class="pb-3 px-3 flex flex-wrap justify-end">
+            <BaseChip 
+              v-for="(chip, index) in chips" :key="index" 
+              :label="chip"
+              class="xs:w-11/12 xs:my-1 xs:mx-auto lg:mx-1 lg:w-28"
+            />
+          </div>
         </div>
-     </div>
+      </div>
      <!-- 광고성 문자 -->
-     <div class="border-y py-3 flex justify-between">
-      <h5 class="text-22">광고성 문자(080 수신거부번호 포함)</h5>
+     <div class="flex justify-between items-center py-3 under-line">
+      <h5 class="sm:text-xl md:text-2xl font-bold text-left">광고성 문자(080 수신거부번호 포함)</h5>
       <button class="border-none pointer" @click="$emit('upadate:ad')">
-        <img src="/icon/toggle.png" alt="">
+        <img src="/src/assets/toggle-btn.svg" alt="">
       </button>
      </div>
 
@@ -76,19 +81,4 @@ watch(() => props.content, (newValue) => {
   byteSize.value = getByteSize(newValue);
 });
 const deleteContet = () => emit('delete:content');
-
-
-
 </script>
-
-<style scoped>
-.wrap {
-  /* width: 90%; */
-}
-.border-box {
-  border: 1px solid #CECECE;
-}
-#input-area .chip:nth-child(2) {
-  margin: 0 1rem;
-}
-</style>

@@ -1,7 +1,8 @@
 <template>
+  <!--  xs:w-full sm:w-8/12 md:w-9/12 -->
   <button 
-    class="text-16 chip inline-block border-none pointer"
-    :class="!!color ? 'color-white bg-violet' : 'color-grey-3 bg-grey-1'"
+    class="chip xs:text-[14px] md:text-base rounded-full"
+    :class="!!color ? 'bg-violet' : 'text-[#646464] bg-[#F5F5F5]'"
   >
     {{ label }}
   </button>
@@ -20,11 +21,3 @@ defineProps({
 });
 
 </script>
-
-<style scoped>
-.chip {
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  width: 107px;
-}
-</style>

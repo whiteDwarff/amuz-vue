@@ -1,53 +1,50 @@
 <template>
-  <section>
-
-    <div class="text-center">
-      <img id="sigin-up-logo" src="/icon/logo.png" alt="logo">
-    </div>
-    
+  <section class="md:w-7/12 lg:w-5/12 mx-auto">
+    <img id="sign-in-logo" class="mx-auto xs:mb-[50px] sm:mb-[80px]" src="/icon/logo.png" alt="logo">
     <form @submit.prevent="submit">
-      <div class="">
+      <div class="flex bg-white rounded-lg pl-2">
+        <img src="/src/assets/member.svg" alt="">
         <input 
           id="name" 
           v-model="info.name" 
           type="text" 
           placeholder="아이디를 입력해주세요" 
-          class="pa-1 mt-1 block full-width"
+          class="w-full border-0"
         >
       </div>
-      <div class="my-3">
+      <div class="my-6 flex bg-white rounded-lg pl-2">
+        <img src="/src/assets/password.svg" alt="">
         <input 
           id="id"
           v-model="info.id"
           type="text"
           placeholder="비밀번호(영문, 숫자, 특수문자 포함 8~30자)"
-          class="pa-1 mt-1 block full-width"
+          class="w-full border-0"
         >
       </div>
 
-      <div id="terms-box" class="flex align-items-center justify-between">
-        <div class="flex align-items-center">
-          <input
+      <div class="grid xs:grid-cols-1 sm:grid-cols-2  justify-between">
+        <div class="xs:text-center sm:text-left xs:mb-2">
+            <input
             id="saveId"
             type="checkbox" 
-            class="pointer"
+            class="pointer cursor-pointer"
             @click="info.saveId = !info.saveId"
-          >
-          <label for="saveId" class="text-14 ml-1 pointer">아이디 저장</label>
+            >
+            <label for="saveId" class="pl-2 cursor-pointer xs:text-base md:text-lg">아이디 저장</label>
         </div>
-        <div >
-          <router-link to="/" class="text-14 pr-2">아이디 찾기</router-link>
-          <router-link to="/" class="text-14 pl-2">비밀번호 찾기</router-link>
+        <div id="find-link" class="xs:text-center sm:text-right">
+          <router-link to="/" class="pr-4 txs:text-base md:text-lg">아이디 찾기</router-link>
+          <router-link to="/" class="pl-4 xs:text-base md:text-lg">비밀번호 찾기</router-link>
         </div>
       </div>
 
-      <button id="submit-btn" type="submit" class="mt-3 text-16 full-width border-none py-1 color-white pointer">로그인</button>
+      <button id="submit-btn" type="submit" class="w-full my-6 text-white bg-violet pointer xs:text-base md:text-lg">로그인</button>
     </form>
 
-    <div class="text-center mt-3">
-      <span class="text-14">계정이 없으신가요?</span>
-      <router-link id="sign-up-btn" to="/signUp" class="text-14">회원가입하기</router-link>
-
+    <div>
+      <span class="xs:text-base md:text-lg">계정이 없으신가요?</span>
+      <router-link id="sign-up-btn" to="/signUp" class="text-violet underline ml-3 xs:text-base md:text-lg">회원가입하기</router-link>
     </div>
   </section>
 </template>
@@ -70,39 +67,11 @@ const submit = () => {
 </script>
 
 <style scoped>
-section {
-  background-color: #F2F4F8;
-  padding: 20rem 0;
+#find-link a:last-child {
+  border-left: 1px solid #CECECE;
 }
-#sigin-up-logo {
+#sign-in-logo {
   width: 219px;
   height: 68px;
-  margin-bottom: 6rem;
-}
-form {
-  width: 30%;
-  margin: 0 auto;
-}
-input {
-  width: calc(100% - 20px);
-  border: 1px solid #CECECE;
-  border-radius: 8px;
-  font-size: 14px;
-}
-#saveId {
-  width: 16px;
-  height: 16px;
-}
-#submit-btn {
-  background-color: #4F44F0;
-  border-radius: 8px;
-}
-a.pl-2 {
-  border-left: 1px solid #DEDEDE;
-}
-#sign-up-btn {
-  color: #5146F0;
-  text-decoration: underline;
-  margin-left: 1rem;
 }
 </style>

@@ -1,11 +1,10 @@
 <template>
-  <section>
+  <section class="bg-back">
     <div class="text-center">
-      <h2 class="text-38">크레딧 구매</h2>
-      <span class="text-19 color-grey-3 block mt-2 mb-3">메시지 전송을 위해 사용할 크레딧 상품을 선택해 주세요</span>
+      <h2 class="xs:text-3xl md:text-4xl font-bold">크레딧 구매</h2>
+      <span class="xs:text-base md:text-lg text-grey-7 block mt-5 mb-10">메시지 전송을 위해 사용할 크레딧 상품을 선택해 주세요</span>
     </div>
-
-    <article class="flex mx-auto card-wrap">
+    <article class="grid xs:xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <CreditCard
         v-for="card of cards" :key="card.price" 
         :card="card"
@@ -54,20 +53,3 @@ const cards = ref([
   },
 ])
 </script>
-
-<style scoped>
-section {
-  background-color: #F2F4F8;
-  padding: 10rem 0 20rem 0;
-}
-.card-wrap {
-  width:70%;
-}
-.card {
-  margin-right: 24px;
-}
-.card:last-child {
-  margin-right: 0;
-}
-
-</style>

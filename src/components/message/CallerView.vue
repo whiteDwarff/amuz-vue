@@ -1,10 +1,9 @@
 <template>
  <!-- 발신번호 -->
- <div id="caller" class="py-3 border-y ">
-  <h5 class="text-22 mb-2">발신번호</h5>
+ <div id="caller" class="under-line py-6">
+  <h5 class="sm:text-xl md:text-2xl font-bold text-left mb-4">발신번호</h5>
   <select 
-    class="full-width color-grey-3 text-18 border-none bg-grey pa-1"
-    style="border-radius: 8px;"
+    class="w-full bg-light-grey text-grey-7 border-0 cursor-pointer"
     @change="$emit('update:caller', $event.target.value)"
   >
     <option value selected>발신번호선택</option>
