@@ -17,6 +17,7 @@ export default {
         'sky-blue': '#E0EDFF',
         'light-grey': '#F5F6FA',
         'grey-7': '#7B7B7B',
+
         // grey: '#CECECE',
         // 'grey-f4': '#F4F5F6',
         // 'grey-8d': '#8D8D8D'

@@ -38,11 +38,9 @@
           <router-link to="/" class="pl-4 xs:text-base md:text-lg">비밀번호 찾기</router-link>
         </div>
       </div>
-
       <button id="submit-btn" type="submit" class="w-full my-6 text-white bg-violet pointer xs:text-base md:text-lg">로그인</button>
     </form>
-
-    <div>
+    <div class="text-center">
       <span class="xs:text-base md:text-lg">계정이 없으신가요?</span>
       <router-link id="sign-up-btn" to="/signUp" class="text-violet underline ml-3 xs:text-base md:text-lg">회원가입하기</router-link>
     </div>

@@ -11,9 +11,7 @@
             :class="{'way-btn' : message.way == button.value}"
             class="bg-light-grey block text-[#555555]"
             @click="changeMessageWay(button)"
-          >
-            {{ button.key }}
-          </button>
+          >{{ button.key }}</button>
         </div>
         <div class="text-left py-10 under-line">
           <span class="block xs:text-[12px] sm:text-[14px] md:text-base text-grey-7 mb-1">• 간편하게 한 화면에서 단문, 장문 포토메세지를 발송할 수 있습니다.</span>
@@ -28,6 +26,7 @@
             @update:tel="updateTel"
             @delete:tel="message.tel.length = 0"
           />
+          <!-- 발신번호 -->
           <CallerView
             v-model:caller="message.caller"
             @update:caller="updateCaller"
@@ -40,7 +39,6 @@
             @upadate:ad="message.ad = !message.ad"
           />
         </div>
-        
         <div id="sticky-box" class="xs:hidden md:block md:w-4/12">
           <img id="sticky-img" class="mt-3 flex flex-end" src="/icon/phone.png" alt="phone">
         </div>
@@ -89,8 +87,6 @@ const changeMessageWay = ({value}) => {
 const updateTel = value => message.value.tel.push(value);
 const deleteContent = () => message.value.content = '';
 const updateCaller = value => message.value.caller = value;
-
-
 </script>
 
 <style scoped>
@@ -99,7 +95,7 @@ const updateCaller = value => message.value.caller = value;
   background-color: #5146F0;
 }
 #sticky-box {
-  height: 1700px;
+  height: 1670px;
 }
 #sticky-img {
   position: sticky;

@@ -1,17 +1,24 @@
 
 <template>
   <div>
-    <header>
-      <div class="wrap">
-        <router-link to="/"><h1>LOGO</h1></router-link>
-        <router-link to="/message" :class="{currentPage : currentView == 'message'}" @click="changeViewMode('message')" >메시지</router-link>
-        <router-link to="/credits" :class="{currentPage : currentView == 'credits'}" @click="changeViewMode('credits')">크레딧</router-link>
-      </div>
-    </header>
-    <!-- <index /> -->
+    <HeaderView />
+
+    <template v-if="$route.path == '/'">
+      <MainBanner />
+    </template>
+
     <div id="router-view">
       <RouterView />
     </div>
+
+    <template v-if="$route.path == '/'">
+      <div class="bg-black text-center xs:py-[10rem] md:py-[13rem] xs:mt-[5rem] md:mt-[10rem]">
+        <h2 id="text-gradient" class="bold xs:mb-10 md:mb-14 xs:text-[36px] lg:text-[48px]">비즈니스 광고의 시작,<br>이제 샌드고와 함께 하세요.</h2>
+        <router-link to="/message">
+          <button class="xs:text-[15px] sm:text-[17px] md:text-[21px] text-white bg-[#6250FF] rounded-full">메시지 바로가기</button>
+        </router-link>
+      </div>
+    </template>
   </div>
 
   <FooterView />
@@ -20,19 +27,18 @@
 
 
 <script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 import FooterView from './components/common/FooterView.vue';
-
-const router = useRouter();
-
-const currentView = ref('message');
-const changeViewMode = view => {
-  currentView.value = view;
-  router.push(view);
-}
+import HeaderView from './components/common/HeaderView.vue';
+import MainBanner from './components/index/MainBanner.vue';
 </script>
-<style scoped>
 
-</style>
+<style scoped>
+#text-gradient {
+  background: linear-gradient(to right, #B6B7F7, #7FB2FE);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; 
+}
+  </style>
 

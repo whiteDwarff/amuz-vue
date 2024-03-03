@@ -13,12 +13,14 @@
       </div>
       <!-- 단문 SMS, byte -->
       <div class="my-3 flex flex-wrap justify-between items-center">
-        <BaseChip label="단문 SMS" :color="true" class="text-white xs:mx-auto sm:mx-0 xs:w-11/12 sm:w-3/6 md:w-5/12 lg:w-28"/>
-        <div class="flex items-center xs:mx-auto xs:mt-3 sm:m-0">
-          <span class="xs:text-[14px] md:text-base text-violet font-bold">
-            {{ byteSize }}&ensp;
-          </span>
-          <span class="xs:text-[14px] md:text-base text-[#8D8D8D] font-bold">/ 90byte</span>
+        <BaseChip label="단문 SMS" :color="true" class="text-white xs:mx-auto sm:mx-0 xs:w-full sm:w-3/6 md:w-5/12 lg:w-28"/>
+        <div class="flex items-center xs:w-full xs:justify-between xs:mt-3 sm:m-0 sm:justify-end sm:w-[30%]">
+          <div>
+            <span class="xs:text-[14px] md:text-base text-violet font-bold">
+              {{ byteSize }}&ensp;
+            </span>
+            <span class="xs:text-[14px] md:text-base text-[#8D8D8D] font-bold">/ 90byte</span>
+          </div>
           <button class="border-none ml-1 p-0 ml-3" @click="deleteContet">
             <img src="/src/assets/refresh.svg" alt="">
           </button>
