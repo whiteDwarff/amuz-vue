@@ -18,8 +18,8 @@
           <span class="xs:text-[12px] sm:text-[14px] md:text-base text-grey-7">• 90byte 초과 시 장문문자로 자동 전환되며, 최대 2,000byte까지 작성이 가능합니다.</span>
         </div>
       </article>
-      <article class="flex">
-        <div id="content-box" class="xs:w-full md:w-8/12">
+      <article class="grid grid-cols-12">
+        <div id="content-box" class="xs:col-span-12 md:col-span-8">
           <!-- 수신번호 -->
           <RecipientView 
             :list="message.tel"
@@ -39,7 +39,7 @@
             @upadate:ad="message.ad = !message.ad"
           />
         </div>
-        <div id="sticky-box" class="xs:hidden md:block md:w-4/12">
+        <div id="sticky-box" class="xs:hidden md:block md:col-span-4">
           <img id="sticky-img" class="mt-3 flex flex-end" src="/icon/phone.png" alt="phone">
         </div>
       </article>
