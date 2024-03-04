@@ -1,7 +1,7 @@
 <template>
   <section class="md:w-7/12 lg:w-5/12 mx-auto">
 
-    <img id="sign-up-logo" class="mx-auto xs:mb-[50px] sm:mb-[80px]" src="/icon/logo.png" alt="logo">
+    <img id="sign-up-logo" class="mx-auto xs:mb-[50px] sm:mb-[80px]" src="/src/assets/logo.svg" alt="logo">
     
     <form @submit.prevent="submit" class="text-left">
       <div class="xs:mb-5 sm:mb-10">

@@ -1,0 +1,13 @@
+<template>
+  <div class="bg-rose-300 font-bold">
+    404 NOT FOUND
+  </div>
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>

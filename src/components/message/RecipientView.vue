@@ -30,7 +30,7 @@
         class="flex items-center justify-center xs:text-[14px] text-grey-7 sm:text-base md:text-lg border-box"
         v-for="button of buttons" :key="button.key"
       >
-        <img :src='`/src/assets/${button.icon}.svg`' alt="아이콘" style="width: 30px">
+        <img :src='`/src/assets/message/${button.icon}.svg`' alt="아이콘" style="width: 30px">
         {{ button.key }}
       </button>
     </div>

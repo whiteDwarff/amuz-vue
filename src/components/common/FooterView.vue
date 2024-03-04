@@ -3,7 +3,9 @@
     <div class="footer-wrap text-[#EDEDED]">
       <div id="a" class="">
         <div class="grid grid-cols-2 py-8 w-10/12 mx-auto">
-            <h2>로고 더미</h2>
+          <router-link to="/" class="md:mr-[10rem]">
+            <img src="/src/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
+          </router-link>
             <div>
               <router-link
               to="/message"

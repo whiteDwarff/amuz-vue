@@ -40,7 +40,7 @@
           />
         </div>
         <div id="sticky-box" class="xs:hidden md:block md:col-span-4">
-          <img id="sticky-img" class="mt-3 flex flex-end" src="/icon/phone.png" alt="phone">
+          <img id="sticky-img" class="mt-3 flex flex-end" src="/src/assets/message/phone.png" alt="phone">
         </div>
       </article>
 

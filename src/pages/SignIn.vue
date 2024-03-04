@@ -1,9 +1,9 @@
 <template>
   <section class="md:w-7/12 lg:w-5/12 mx-auto">
-    <img id="sign-in-logo" class="mx-auto xs:mb-[50px] sm:mb-[80px]" src="/icon/logo.png" alt="logo">
+    <img id="sign-in-logo" class="mx-auto xs:mb-[50px] sm:mb-[80px]" src="/src/assets/logo.svg" alt="logo">
     <form @submit.prevent="submit">
       <div class="flex bg-white rounded-lg pl-2">
-        <img src="/src/assets/member.svg" alt="">
+        <img src="/src/assets/auth/member.svg" alt="">
         <input 
           id="name" 
           v-model="info.name" 
@@ -13,7 +13,7 @@
         >
       </div>
       <div class="my-6 flex bg-white rounded-lg pl-2">
-        <img src="/src/assets/password.svg" alt="">
+        <img src="/src/assets/auth/password.svg" alt="">
         <input 
           id="id"
           v-model="info.id"
@@ -24,7 +24,7 @@
       </div>
 
       <div class="grid xs:grid-cols-1 sm:grid-cols-2  justify-between">
-        <div class="xs:text-center sm:text-left xs:mb-2">
+        <div class="xs:text-center sm:text-left xs:mb-2 md:mb-0">
             <input
             id="saveId"
             type="checkbox" 

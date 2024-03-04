@@ -25,7 +25,7 @@
     
     <!-- ohter menu -->
     <div 
-      v-if="$route.path != '/'"
+      v-if="$route.path == '/message' || $route.path  == '/credits'"
       class="sub-menu bg-white xs:leading-[60px] md:h-[81px] md:leading-[81px]"
     >
       <div class="max-width mx-auto text-right">
