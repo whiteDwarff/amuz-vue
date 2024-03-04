@@ -23,7 +23,7 @@ export default {
         // 'grey-8d': '#8D8D8D'
       },
       screens: {
-        xs: '500px'
+        xs: '0px'
       },
       fontSize: {
         xl: '22px'
