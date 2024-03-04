@@ -1,15 +1,16 @@
 <template>
   <div class="under-line py-6">
     <h5 class="sm:text-xl md:text-2xl font-bold text-left mb-4">수신번호</h5>
-    <div class="flex flex-wrap justify-between my-3">
+    <div class="grid grid-cols-12 my-3">
+     <-- <div class="flex flex-wrap justify-between my-3"> -->
       <input 
         v-model="tel"
         type="text"
-        class="sm:text-base md:text-lg bg-[#F4F5F6] xs:w-full sm:w-8/12 md:w-9/12 border-0" 
+        class="sm:text-base md:text-lg bg-[#F4F5F6] xs:col-span-12 sm:col-span-8 md:col-span-9 border-0" 
         placeholder="휴대폰번호 (숫자만 입력)"
         @input="removeString($event.target.value)"
       >
-      <button class="sm:text-base md:text-lg bg-violet xs:mt-3 sm:mt-0 xs:w-full sm:w-3/12 md:w-2/12 text-white " @click="addTel">+ 추가</button>
+      <button class="sm:text-base md:text-lg bg-violet xs:mt-3 sm:mt-0 xs:col-span-12 sm:col-span-4 md:col-span-3 text-white " @click="addTel">+ 추가</button>
     </div>
     <div class="text-left rounded-lg border-box">
       <textarea 
