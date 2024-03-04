@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="">
     <form class="card bg-white mx-auto rounded-2xl" @submit.prevent="">
       <article class="card-header">
         <div class="text-center mb-3">

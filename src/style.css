@@ -41,7 +41,6 @@ button {
 #router-view{
   max-width: 1280px;
   margin: 2rem auto 7rem auto;
-  padding: 2rem;
 }
 /* #app {
   max-width: 1280px;
@@ -64,7 +63,9 @@ input, textarea, select {
 .under-line {
   border-bottom: 1px solid #c8c8c8;
 }
-
+.max-width {
+  max-width: 1280px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
