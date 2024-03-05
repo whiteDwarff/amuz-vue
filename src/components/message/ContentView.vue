@@ -30,6 +30,7 @@
       <div class="pb-6 under-line">
         <div id="input-area" class="rounded-lg bg-white border-box">
           <textarea 
+            ref="input"
             class="sm:text-base md:text-lg border-0"
             rows="10" placeholder="내용을 입력해 주세요. 90byte 초과 시 장문 문자로,&#13;&#10;이미지 추가 시 포토 문자로 자동 전환 됩니다."
             style="resize: none; border-radius: 5px; width: calc(100% - 20px); "
@@ -51,7 +52,7 @@
         <img src="/src/assets/message/toggle-btn.svg" alt="">
       </button>
      </div>
-
+     <!-- 이미지 추가 -->
      <AddImageView />
 
     </div>
@@ -63,6 +64,7 @@ import { ref, watch } from 'vue';
 import { getByteSize } from '/src/utils/byte.js';
 import BaseChip from '/src/components/common/BaseChip.vue';
 import AddImageView from '/src/components/message/AddImageView.vue';
+
 
 const props = defineProps({
   title: {
@@ -78,9 +80,14 @@ const emit = defineEmits(['update:title', 'update:content', 'delete:content', 'u
 
 const chips = ref(['치환코드', '템플릿', '문자도구']);
 const byteSize = ref(getByteSize(props.content));
+// 메세지 입력 textarea 초기화
+const input = ref(null);
 
 watch(() => props.content, (newValue) => {
   byteSize.value = getByteSize(newValue);
 });
-const deleteContet = () => emit('delete:content');
+const deleteContet = () =>{
+  emit('delete:content');
+  input.value.value = ''
+} 
 </script>

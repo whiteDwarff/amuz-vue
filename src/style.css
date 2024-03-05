@@ -4,7 +4,6 @@
 
 :root {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -42,13 +41,6 @@ button {
   max-width: 1280px;
   margin: 2rem auto 7rem auto;
 }
-/* #app {
-  max-width: 1280px;
-  width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 2rem;
-} */
 button, input, textarea, select  {
   outline: none;
   border-radius: 8px;
