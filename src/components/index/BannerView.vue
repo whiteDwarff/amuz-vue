@@ -42,7 +42,7 @@
           <div class="xs:mx-auto xs:w-[90%] md:w-[35%] bg-[#FAFAEE] rounded-[25px] overflow-hidden pt-7 px-7 h-fit xs:mt-[4%] md:mt-0">
             <h5 class="'xs:text-base sm:text-lg md:text-2xl lg:text-[26px] font-bold text-[#6C3111] mb-1">누르면 바로 전송완료</h5>
             <h5 class="'xs:text-base sm:text-lg md:text-2xl lg:text-[26px] font-bold text-[#6F6F6F] mb-10">누르자마자 수신인에게<br>바로 전달됩니다</h5>
-            <img src="/src/assets/index/msg2.png" class="">
+            <img src="/src/assets/index/msg2.png" class="mx-auto">
           </div>
         </div>
       </article>

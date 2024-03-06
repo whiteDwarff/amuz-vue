@@ -33,6 +33,7 @@
           />
           <!-- 메시세지 입력 -->
           <ContentView 
+            ref="content"
             v-model:title="message.title"
             v-model:content="message.content"
             @delete:content="deleteContent"
@@ -80,6 +81,7 @@ const message = ref({
   image: [],
   shpmnStngs: true,
 });
+
 const changeMessageWay = ({value}) => {
   message.value.way = value;
   return message.value?.way == value ? 'current-btn' : ''
@@ -95,11 +97,12 @@ const updateCaller = value => message.value.caller = value;
   background-color: #5146F0;
 }
 #sticky-box {
-  height: 1670px;
+  /* height: 1670px; */
+  height: 1700px;
 }
 #sticky-img {
   position: sticky;
-  top: 10px;
+  top: 83px;
   margin-left: auto;
   margin-top: 1.5rem;
 }

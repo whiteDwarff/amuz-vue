@@ -1,38 +1,31 @@
 <template>
-  <header class="bg-white" style="border-bottom: 1px solid #f2f2f2;">
-      <!-- main menu-->
-      <div class="flex items-center px-3 xs:w-full xs:justify-between sm:justify-around md:justify-stretch md:w-9/12 mx-auto xs:h-[60px] xs:leading-[60px] md:h-[81px] md:leading-[81px]">
-        <!-- index -->
-        <router-link to="/" class="md:mr-[10rem]">
-          <img src="/src/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
-        </router-link>
-        <!-- nav -->
-        <div class="">
-          <div class="flex xs:ml-auto">
-            <router-link 
-              to="/message/post"
-              class="xs:text-[14px] sm:text-[16px] md:text-[20px] xs:px-5 md:px-10 cursor-pointer"
-              :class="{'current-page' : $route.path.includes('/message')}"
-            >메시지</router-link>
-            <router-link 
-              to="/credits/buy"
-              class="xs:text-[14px] sm:text-[16px] md:text-[20px] xs:px-5 md:px-10 cursor-pointer"
-              :class="{'current-page' : $route.path.includes('/credits')}"
-            >크레딧</router-link>
-          </div>
-        </div>
-    </div>
-  </header>
+  <PositionHeader 
+    v-if="$route.path == '/'" 
+    class="bg-black absolute z-20"
+    :color="true"
+    style="border-bottom: 1px solid grey;"
+  >
+  <template #img>
+    <img src="/src/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
+  </template>
+</PositionHeader>
+
+<PositionHeader class="header-white-bg sticky">
+  <template #img>
+    <img src="/src/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
+  </template>
+</PositionHeader>
+
   <!-- ohter menu -->
   <div 
     v-if="isCheckedPath"
     class="sub-menu bg-white xs:leading-[60px] md:h-[81px] md:leading-[81px]"
   >
-    <div class="max-width mx-auto text-right">
+    <div class="max-width mx-auto xs:text-center md:text-right">
       <router-link 
         v-for="item of nav" :key="item.path"
         :to="`/${item.key}${item.path}`"
-        class="xs:text-[14px] sm:text-[16px] md:text-[20px] text-[#555555] mx-4"
+        class="xs:text-[14px] sm:text-[16px] md:text-[20px] text-[#555555] xs:mx-2 md:mx-4"
         :class="{'bg-[#E1E7FD] text-violet rounded-2xl px-4 py-3' : $route.path == `/${item.key}${item.path}`}"
       >{{ item.menu }}</router-link>
     </div>
@@ -42,6 +35,8 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
+
+import PositionHeader from './PositionHeader.vue';
 
 const route = useRoute();
 
@@ -67,8 +62,7 @@ watch(() => route.path, (newValue, oldValue) => {
 </script>
 
 <style scoped>
-.current-page {
-  color: #4E43ED;
-  border-bottom: 2px solid #4E43ED;
+.header-white-bg {
+  background-color: rgb(255,255,255, 0.9);
 }
 </style>
