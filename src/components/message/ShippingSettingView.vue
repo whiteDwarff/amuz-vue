@@ -1,7 +1,6 @@
 <template>
   <div class="pt-6">
     <h5 class="sm:text-xl md:text-2xl font-bold text-left mb-4">발송 설정</h5>
-
     <div class="grid xs:grid-cols-1 md:grid-cols-2 gap-4 justify-between py-3">
       <button 
        :class="{ 'shipping-setting' : shpmnStngs }"

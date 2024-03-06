@@ -44,5 +44,5 @@
 <script setup>
 defineProps({
   card: Object,
-})
+});
 </script>

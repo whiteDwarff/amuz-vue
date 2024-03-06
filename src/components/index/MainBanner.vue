@@ -1,6 +1,5 @@
 <template>
   <div class="bg-black h-1/3">
-    
     <div class="w-[95%] mx-auto flex">
       <!-- 로그인, 회원가입 -->
       <div class="xs:py-4 lg:py-0 xs:w-[90%] lg:w-[60%] my-auto ml-auto xs:text-[18px] sm:text-[20px] lg:text-[24px]">
@@ -35,10 +34,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style  scoped>
 #main-gradient {

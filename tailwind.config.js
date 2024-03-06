@@ -22,7 +22,6 @@ export default {
       fontSize: {
         xl: '22px'
       }
-    
     },
   },
 }
