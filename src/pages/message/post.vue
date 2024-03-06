@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section>
     <form class="card bg-white mx-auto rounded-2xl" @submit.prevent="">
       <article class="card-header">
         <div class="text-center mb-3">
@@ -40,7 +40,8 @@
             @upadate:ad="message.ad = !message.ad"
           />
         </div>
-        <div id="sticky-box" class="xs:hidden md:block md:col-span-4">
+        <!-- md:h-[1800px] lg:h-[1670px]" -->
+        <div id="sticky-box" class="xs:hidden md:block md:col-span-4 md:h-[1805px] lg:h-[1670px]">
           <img id="sticky-img" class="mt-3 flex flex-end" src="/src/assets/message/phone.png" alt="phone">
         </div>
       </article>
@@ -95,9 +96,6 @@ const updateCaller = value => message.value.caller = value;
 .way-btn {
   color: #fff;
   background-color: #5146F0;
-}
-#sticky-box {
-  height: 1670px;
 }
 #sticky-img {
   position: sticky;

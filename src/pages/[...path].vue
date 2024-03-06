@@ -1,5 +1,5 @@
 <template>
-  <div class="font-bold text-[5rem] text-violet p-20">
+  <div class="font-bold text-[5rem] text-violet xs:p-10 md:p-20">
     404<br>NOT FOUND
   </div>
 </template>

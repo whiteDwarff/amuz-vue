@@ -9,7 +9,7 @@
     </template>
   </PositionHeader>
 
-  <PositionHeader class="header-white-bg sticky box-content" style="border-bottom: 1px solid #f2f2f2;">
+  <PositionHeader class="header-white-bg sticky box-content z-10" style="border-bottom: 1px solid #f2f2f2;">
     <template #img>
       <img src="/src/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
     </template>
@@ -20,7 +20,7 @@
     v-if="isCheckedPath"
     class="sub-menu bg-white xs:leading-[60px] md:h-[81px] md:leading-[81px]"
   >
-    <div class="max-width mx-auto xs:text-center md:text-right">
+    <div class="max-width mx-auto xs:text-center lg:text-right">
       <router-link 
         v-for="item of nav" :key="item.path"
         :to="`/${item.key}${item.path}`"

@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-white shadow-md rounded-lg">
+  <div class="card bg-white shadow-md rounded-lg xs:w-[90%] sm:w-full mx-auto">
     <div class="card-header">
       <div>
         <h5 class="xs:text-2xl sm:text-3xl font-bold text-left">{{ card.price.toLocaleString('ko-KR') }} 원</h5>
