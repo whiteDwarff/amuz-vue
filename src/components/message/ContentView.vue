@@ -13,7 +13,11 @@
       </div>
       <!-- 단문 SMS, byte -->
       <div class="my-3 flex flex-wrap justify-between items-center">
-        <BaseChip label="단문 SMS" :color="true" class="text-white xs:mx-auto sm:mx-0 xs:w-full sm:w-3/6 md:w-5/12 lg:w-28"/>
+        <BaseChip 
+          :label="byteSize < 91 ? '단문 SMS' : '장문 SMS'" 
+          :color="true" 
+          class="text-white xs:mx-auto sm:mx-0 xs:w-full sm:w-3/6 md:w-5/12 lg:w-28"
+        />
         <div class="flex items-center xs:w-full xs:justify-between xs:mt-3 sm:m-0 sm:justify-end sm:w-[30%]">
           <div>
             <span class="xs:text-[14px] md:text-base text-violet font-bold">
@@ -64,7 +68,6 @@ import { ref, watch } from 'vue';
 import { getByteSize } from '/src/utils/byte.js';
 import BaseChip from '/src/components/common/BaseChip.vue';
 import AddImageView from '/src/components/message/AddImageView.vue';
-
 
 const props = defineProps({
   title: {

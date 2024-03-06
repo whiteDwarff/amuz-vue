@@ -3,18 +3,17 @@
     v-if="$route.path == '/'" 
     class="bg-black absolute z-20"
     :color="true"
-    style="border-bottom: 1px solid grey;"
   >
-  <template #img>
-    <img src="/src/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
-  </template>
-</PositionHeader>
+    <template #img>
+      <img src="/src/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
+    </template>
+  </PositionHeader>
 
-<PositionHeader class="header-white-bg sticky">
-  <template #img>
-    <img src="/src/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
-  </template>
-</PositionHeader>
+  <PositionHeader class="header-white-bg sticky box-content" style="border-bottom: 1px solid #f2f2f2;">
+    <template #img>
+      <img src="/src/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
+    </template>
+  </PositionHeader>
 
   <!-- ohter menu -->
   <div 

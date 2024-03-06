@@ -1,5 +1,4 @@
 <template>
-  <!--  xs:w-full sm:w-8/12 md:w-9/12 -->
   <button 
     class="chip xs:text-[14px] md:text-base rounded-full"
     :class="!!color ? 'bg-violet' : 'text-[#646464] bg-[#F5F5F5]'"

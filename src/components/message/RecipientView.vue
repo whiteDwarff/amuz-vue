@@ -56,6 +56,7 @@ const buttons = ref([
 
 const removeString = (value) => tel.value = value.replace(/[^0-9]/g, "");
 const addTel = () => {
+  if(!tel.value) return;
   emit('update:tel', tel.value);
   tel.value = '';
 }

@@ -1,5 +1,4 @@
 <template>
-  <!-- xs:w-11/12 xs:mx-auto sm:w-6/12 md:w-4/12 lg:w-3/12 -->
   <div class="card bg-white shadow-md rounded-lg">
     <div class="card-header">
       <div>
@@ -34,10 +33,11 @@
         </span>
       </div>
     </div><!-- card-info -->
-    <div>
 
+    <div>
       <button class="bg-violet text-white w-full">구매하기</button>
     </div>
+
   </div>
 </template>
 
@@ -46,6 +46,3 @@ defineProps({
   card: Object,
 })
 </script>
-
-<style  scoped>
-</style>

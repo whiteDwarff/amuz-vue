@@ -97,8 +97,7 @@ const updateCaller = value => message.value.caller = value;
   background-color: #5146F0;
 }
 #sticky-box {
-  /* height: 1670px; */
-  height: 1700px;
+  height: 1670px;
 }
 #sticky-img {
   position: sticky;

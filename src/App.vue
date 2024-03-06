@@ -3,10 +3,9 @@
   <div>
     <HeaderView />
     <!-- top banner -->
-    <MainBanner  v-if="$route.path == '/'" />
-
+    <MainBanner v-if="$route.path == '/'"/>
     <!-- router-view -->
-    <div id="router-view" class="xs:p-[0.5rem] sm:p-[1rem] md:p-[2rem]">
+    <div id="router-view" class="xs:p-[1rem] md:p-[2rem]">
       <RouterView />
     </div>
 

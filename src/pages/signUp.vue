@@ -1,61 +1,62 @@
 <template>
-  <section class="md:w-7/12 lg:w-5/12 mx-auto">
+  <section class="xs:w-11/12 md:w-9/12 lg:w-5/12 mx-auto">
 
-    <img id="sign-up-logo" class="mx-auto xs:mb-[50px] sm:mb-[80px]" src="/src/assets/logo.svg" alt="logo">
+    <img id="sign-up-logo" class="mx-auto mt-[60px] mb-[80px]" src="/src/assets/logo.svg" alt="logo">
     
     <form @submit.prevent="submit" class="text-left">
-      <div class="xs:mb-5 sm:mb-10">
-        <label for="name" class="xs:text-base md:text-lg lg:text-xl mb-2 block">이름</label>
+      <div class="xs:mb-5 md:mb-10">
+        <label for="name" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">이름</label>
         <input 
           id="name" 
           v-model="info.name" 
           type="text" 
           placeholder="이름을 입력해 주세요" 
-          class="w-full"
+          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
         >
       </div>
-      <div class="xs:mb-5 sm:mb-10">
-        <label for="id" class="xs:text-base md:text-lg lg:text-xl mb-2 block">아이디</label>
+      <div class="xs:mb-5 md:mb-10">
+        <label for="id" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">아이디</label>
         <input 
           id="id"
           v-model="info.id"
           type="text"
           placeholder="8자 이상, 영문 혹은 영문과 숫자조합"
-          class="w-full"
+          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
         >
       </div>
-      <div class="xs:mb-5 sm:mb-10">
-        <label for="password" class="xs:text-base md:text-lg lg:text-xl mb-2 block">비밀번호</label>
+      <div class="xs:mb-5 md:mb-10">
+        <label for="password" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">비밀번호</label>
         <input 
           id="password"
           v-model="info.password" 
           type="password" 
           placeholder="비밀번호를 입력해 주세요" 
-          class="w-full"
+          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
         >
       </div>
-      <div class="xs:mb-5 sm:mb-10">
-        <label for="password-chk" class="xs:text-base md:text-lg lg:text-xl mb-2 block">비밀번호 확인</label>
+      <div class="xs:mb-5 md:mb-10">
+        <label for="password-chk" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">비밀번호 확인</label>
         <input
           id="password-chk"
           v-model="confirmPassword"
           type="password"
           placeholder="비밀번호 확인" 
-          class="w-full"
+          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
           >
       </div>
 
-      <div id="terms-box" class="flex align-items-center xs:py-5 xs:my-5 sm:py-10 sm:my-10">
+      <div id="terms-box" class="flex align-items-center xs:py-7 xs:my-7 md:py-10 md:my-10">
         <input
           id="terms"
           type="checkbox" 
           class="pointer w-[15px]"
           @click="info.terms = !info.terms"
         >
-        <label for="terms" class="xs:text-base md:text-lg ml-2 cursor-pointer">모든 약관에 동의합니다.</label>
+        <label for="terms" class="xs:text-[14px] sm:text-[16px] md:text-lg ml-2 cursor-pointer">모든 약관에 동의합니다.</label>
       </div>
 
-      <button id="submit-btn" type="submit" class="xs:text-base md:text-lg lg:text-xl w-full bg-violet text-white">제출하기</button>
+      <button id="submit-btn" type="submit" class="xs:text-[14px] sm:text-[16px] md:text-lg w-full bg-violet text-white">제출하기</button>
+      
     </form>
   </section>
 </template>
@@ -79,7 +80,6 @@ const submit = () => {
   if(info.value.password != confirmPassword.value) return alert('비밀번호가 일치하지 않습니다.');
   if(!info.value.terms) return alert('약관에 동의해주세요');
 }
-
 </script>
 
 <style scoped>

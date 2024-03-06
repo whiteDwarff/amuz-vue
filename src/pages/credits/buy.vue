@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-back ">
+  <section class="bg-back">
     <div class="text-center">
       <h2 class="xs:text-3xl md:text-4xl font-bold">크레딧 구매</h2>
       <span class="xs:text-base md:text-lg text-grey-7 block mt-5 mb-10">메시지 전송을 위해 사용할 크레딧 상품을 선택해 주세요</span>
@@ -11,7 +11,6 @@
         class="xs:col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3"
       />
     </article>
-
   </section>
 </template>
 
@@ -52,5 +51,5 @@ const cards = ref([
     basic: 100000,
     addition: 10000,
   },
-])
+]);
 </script>
