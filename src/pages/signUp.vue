@@ -1,47 +1,47 @@
 <template>
   <section class="xs:w-11/12 md:w-9/12 lg:w-5/12 mx-auto">
 
-    <img id="sign-up-logo" class="mx-auto mt-[60px] mb-[80px]" src="/src/assets/logo.svg" alt="logo">
+    <img id="sign-up-logo" class="mx-auto mt-[60px] mb-[80px]" src="/assets/logo.svg" alt="logo">
     
     <form @submit.prevent="submit" class="text-left">
-      <div class="xs:mb-5 md:mb-10">
-        <label for="name" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">이름</label>
+      <div class="xs:mb-5 md:mb-10 xs:text-[14px] sm:text-[16px] md:text-lg">
+        <label for="name" class=" mb-2 block">이름</label>
         <input 
           id="name" 
           v-model="info.name" 
           type="text" 
           placeholder="이름을 입력해 주세요" 
-          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
+          class=" w-full"
         >
       </div>
-      <div class="xs:mb-5 md:mb-10">
-        <label for="id" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">아이디</label>
+      <div class="xs:mb-5 md:mb-10  xs:text-[14px] sm:text-[16px] md:text-lg">
+        <label for="id" class=" mb-2 block">아이디</label>
         <input 
           id="id"
           v-model="info.id"
           type="text"
           placeholder="8자 이상, 영문 혹은 영문과 숫자조합"
-          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
+          class=" w-full"
         >
       </div>
-      <div class="xs:mb-5 md:mb-10">
-        <label for="password" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">비밀번호</label>
+      <div class="xs:mb-5 md:mb-10 xs:text-[14px] sm:text-[16px] md:text-lg">
+        <label for="password" class=" mb-2 block">비밀번호</label>
         <input 
           id="password"
           v-model="info.password" 
           type="password" 
           placeholder="비밀번호를 입력해 주세요" 
-          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
+          class=" w-full"
         >
       </div>
-      <div class="xs:mb-5 md:mb-10">
-        <label for="password-chk" class="xs:text-[14px] sm:text-[16px] md:text-lg mb-2 block">비밀번호 확인</label>
+      <div class="xs:mb-5 md:mb-10 xs:text-[14px] sm:text-[16px] md:text-lg">
+        <label for="password-chk" class=" mb-2 block">비밀번호 확인</label>
         <input
           id="password-chk"
           v-model="confirmPassword"
           type="password"
           placeholder="비밀번호 확인" 
-          class="xs:text-[14px] sm:text-[16px] md:text-lg w-full"
+          class=" w-full"
           >
       </div>
 

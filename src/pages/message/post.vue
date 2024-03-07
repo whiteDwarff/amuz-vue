@@ -13,9 +13,9 @@
             @click="changeMessageWay(button)"
           >{{ button.key }}</button>
         </div>
-        <div class="text-left py-10 under-line">
-          <span class="block xs:text-[12px] sm:text-[14px] md:text-base text-grey-7 mb-1">• 간편하게 한 화면에서 단문, 장문 포토메세지를 발송할 수 있습니다.</span>
-          <span class="xs:text-[12px] sm:text-[14px] md:text-base text-grey-7">• 90byte 초과 시 장문문자로 자동 전환되며, 최대 2,000byte까지 작성이 가능합니다.</span>
+        <div class="text-left xs:text-[12px] sm:text-[14px] md:text-base py-10 under-line text-grey-7">
+          <span class="block mb-1">• 간편하게 한 화면에서 단문, 장문 포토메세지를 발송할 수 있습니다.</span>
+          <span>• 90byte 초과 시 장문문자로 자동 전환되며, 최대 2,000byte까지 작성이 가능합니다.</span>
         </div>
       </article>
       <article class="grid grid-cols-12">

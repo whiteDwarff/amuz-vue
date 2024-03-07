@@ -1,6 +1,6 @@
 <template>
   <section class="xs:w-11/12 md:w-9/12 lg:w-5/12 mx-auto">
-    <img id="sign-in-logo" class="mx-auto mt-[60px] mb-[80px] " src="/src/assets/logo.svg" alt="logo">
+    <img id="sign-in-logo" class="mx-auto mt-[60px] mb-[80px] " src="/assets/logo.svg" alt="logo">
     <form @submit.prevent="submit">
       <div class="flex bg-white rounded-lg pl-2">
         <img src="/assets/auth/member.svg" alt="">
@@ -33,18 +33,18 @@
             >
             <label for="saveId" class="pl-2 cursor-pointer xs:text-[14px] sm:text-[14px] md:text-lg">아이디 저장</label>
         </div>
-        <div id="find-link" class="text-right xs:col-span-8 col-span-6">
-          <router-link to="/" class="pr-4 xs:text-[14px] sm:text-[14px] md:text-lg">아이디 찾기</router-link>
-          <router-link to="/" class="pl-4 xs:text-[14px] sm:text-[14px] md:text-lg">비밀번호 찾기</router-link>
+        <div id="find-link" class="sm:text-[14px] md:text-lg text-right xs:col-span-8 col-span-6">
+          <router-link to="/" class="pr-4 xs:text-[14px]">아이디 찾기</router-link>
+          <router-link to="/" class="pl-4 xs:text-[14px]">비밀번호 찾기</router-link>
         </div>
       </div>
 
-      <button id="submit-btn" type="submit" class="w-full mb-8 text-white bg-violet xs:text-[14px] md:text-lg">로그인</button>
+      <button id="submit-btn" type="submit" class="xs:text-[14px] sm:text-[16px] md:text-lg w-full bg-violet text-white mb-8">로그인</button>
 
     </form>
-    <div class="text-center">
-      <span class="xs:text-[14px] md:text-lg">계정이 없으신가요?</span>
-      <router-link id="sign-up-btn" to="/signUp" class="text-violet underline ml-3 xs:text-[14px] md:text-lg">회원가입하기</router-link>
+    <div class="text-center xs:text-[14px] md:text-lg">
+      <span>계정이 없으신가요?</span>
+      <router-link id="sign-up-btn" to="/signUp" class="text-violet underline ml-3 ">회원가입하기</router-link>
     </div>
   </section>
 </template>
