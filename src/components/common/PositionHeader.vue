@@ -8,15 +8,15 @@
       </router-link>
       <!-- nav -->
       <div>
-        <div class="flex xs:ml-auto">
+        <div class="flex xs:ml-auto xs:text-[14px] sm:text-[16px] md:text-[20px] ">
           <router-link 
             to="/message/post"
-            class="xs:text-[14px] sm:text-[16px] md:text-[20px] xs:px-5 md:px-10"
+            class="xs:px-5 md:px-10"
             :class="[{'current-page': $route.path.includes('/message')}, textColor ]"
           >메시지</router-link>
           <router-link 
             to="/credits/buy"
-            class="xs:text-[14px] sm:text-[16px] md:text-[20px] xs:px-5 md:px-10"
+            class="xs:px-5 md:px-10"
             :class="[{'current-page': $route.path.includes('/credit')}, textColor ]"
           >크레딧</router-link>
         </div>

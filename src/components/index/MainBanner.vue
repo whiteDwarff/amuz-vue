@@ -19,16 +19,16 @@
       <!-- image -->
       <div class="xs:hidden lg:w-[40%] overflow-hidden lg:flex">
         <div class="thum inline mt-auto ">
-          <img src="/src/assets/index/main-banner1.png" class="bg-[#6250FF] mb-[10%] rounded-3xl">
-          <img src="/src/assets/index/main-banner2.png">
+          <img src="/assets/index/main-banner1.png" class="bg-[#6250FF] mb-[10%] rounded-3xl">
+          <img src="/assets/index/main-banner2.png">
         </div>
         <div class="thum inline mt-[-80px] mx-5">
-          <img src="/src/assets/index/main-banner3.png" class="bg-[#25262c] rounded-3xl">
-          <img src="/src/assets/index/main-banner4.png" class="bg-[#6250FF] mt-[10%] rounded-3xl">
+          <img src="/assets/index/main-banner3.png" class="bg-[#25262c] rounded-3xl">
+          <img src="/assets/index/main-banner4.png" class="bg-[#6250FF] mt-[10%] rounded-3xl">
         </div>
        <div class="thum inline mt-[-300px]">
-          <img src="/src/assets/index/main-banner5.png" class="bg-[#6250FF] rounded-3xl">
-            <img src="/src/assets/index/main-banner6.png" class="w-[200%]">
+          <img src="/assets/index/main-banner5.png" class="bg-[#6250FF] rounded-3xl">
+            <img src="/assets/index/main-banner6.png" class="w-[200%]">
         </div> 
       </div>
     </div>

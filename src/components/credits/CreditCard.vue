@@ -4,11 +4,11 @@
       <div>
         <h5 class="xs:text-2xl sm:text-3xl font-bold text-left">{{ card.price.toLocaleString('ko-KR') }} 원</h5>
        
-        <div class="pt-4 mb-6">
-          <span class="sm:text-[14px] md:text-base text-left text-grey-7 block font-extralight">
+        <div class="pt-4 mb-6 xs:text-[14px] md:text-base text-left sm:text-[14px] md:text-base text-left">
+          <span class="text-grey-7 block font-extralight">
             총 {{ card.send.toLocaleString('ko-KR') }}건 발송가능 합니다.
           </span>
-          <span class="sm:text-[14px] md:text-base text-left text-grey-7 block font-extralight">
+          <span class="text-grey-7 block font-extralight">
             1건당 {{ card.per }}원에 결제가능합니다.
           </span>
         </div>
@@ -22,13 +22,13 @@
       >{{ card.basic / card.addition }}%</div>
     </div>
     <div class="bg-[#F4F5F6] p-3 rounded-lg my-6">
-      <div class="flex justify-between mb-2">
-        <span class="sm:text-[14px] md:text-base text-grey-7 font-extralight">기본 크레딧</span>
-        <span class="sm:text-[14px] md:text-base">{{ card.basic.toLocaleString('ko-KR') }}</span>
+      <div class="flex justify-between mb-2 xs:text-[14px] md:text-base">
+        <span class="text-grey-7 font-extralight">기본 크레딧</span>
+        <span >{{ card.basic.toLocaleString('ko-KR') }}</span>
       </div>
-      <div class="flex justify-between">
-        <span class="sm:text-[14px] md:text-base text-grey-7 font-extralight">추가 크레딧</span>
-        <span class="sm:text-[14px] md:text-base">
+      <div class="flex justify-between xs:text-[14px] md:text-base">
+        <span class="text-grey-7 font-extralight">추가 크레딧</span>
+        <span>
          + {{ card.addition.toLocaleString('ko-KR') }}
         </span>
       </div>

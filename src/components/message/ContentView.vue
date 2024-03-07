@@ -26,7 +26,7 @@
             <span class="xs:text-[14px] md:text-base text-[#8D8D8D] font-bold">/ 90byte</span>
           </div>
           <button class="border-none ml-1 p-0 ml-3" @click="deleteContet">
-            <img src="/src/assets/message/refresh.svg" alt="새로고침 버튼">
+            <img src="/assets/message/refresh.svg" alt="새로고침 버튼">
           </button>
         </div>
       </div>
@@ -53,7 +53,7 @@
      <div class="flex justify-between items-center py-3 under-line">
       <h5 class="sm:text-xl md:text-2xl font-bold text-left">광고성 문자(080 수신거부번호 포함)</h5>
       <button class="border-none pointer" @click="$emit('upadate:ad')">
-        <img src="/src/assets/message/toggle-btn.svg" alt="">
+        <img src="/assets/message/toggle-btn.svg" alt="">
       </button>
      </div>
      <!-- 이미지 추가 -->

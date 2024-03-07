@@ -6,14 +6,14 @@
        :class="{ 'shipping-setting' : shpmnStngs }"
         class="flex items-center justify-center border-0 bg-[#F2F5F9] text-[#747B84]"
         @click="$emit('update:shpmnStngs', true)">
-        <img :src="shpmnStngs ? '/src/assets/message/toggleCheck.svg':'/src/assets/message/check.svg' " alt="체크버튼" style="width: 28px">
+        <img :src="shpmnStngs ? '/assets/message/toggleCheck.svg':'/assets/message/check.svg' " alt="체크버튼" style="width: 28px">
         즉시발송
       </button>
       <button 
         :class="{ 'shipping-setting' : !shpmnStngs}"
         class="flex items-center justify-center border-0 bg-[#F2F5F9] text-[#747B84]"
         @click="$emit('update:shpmnStngs', false)">
-        <img :src="!shpmnStngs ? '/src/assets/message/toggleCheck.svg':'/src/assets/message/check.svg' " alt="체크버튼" style="width: 28px">
+        <img :src="!shpmnStngs ? '/assets/message/toggleCheck.svg':'/assets/message/check.svg' " alt="체크버튼" style="width: 28px">
         예약발송
       </button>
     </div>

@@ -42,7 +42,7 @@
         </div>
         <!-- md:h-[1800px] lg:h-[1670px]" -->
         <div id="sticky-box" class="xs:hidden md:block md:col-span-4 md:h-[1805px] lg:h-[1670px]">
-          <img id="sticky-img" class="mt-3 flex flex-end" src="/src/assets/message/phone.png" alt="phone">
+          <img id="sticky-img" class="mt-3 flex flex-end" src="/assets/message/phone.png" alt="phone">
         </div>
       </article>
 

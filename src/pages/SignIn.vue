@@ -3,7 +3,7 @@
     <img id="sign-in-logo" class="mx-auto mt-[60px] mb-[80px] " src="/src/assets/logo.svg" alt="logo">
     <form @submit.prevent="submit">
       <div class="flex bg-white rounded-lg pl-2">
-        <img src="/src/assets/auth/member.svg" alt="">
+        <img src="/assets/auth/member.svg" alt="">
         <input 
           id="name" 
           v-model="info.name" 
@@ -13,7 +13,7 @@
         >
       </div>
       <div class="mt-8 flex bg-white rounded-lg pl-2">
-        <img src="/src/assets/auth/password.svg" alt="">
+        <img src="/assets/auth/password.svg" alt="">
         <input 
           id="id"
           v-model="info.id"

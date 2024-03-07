@@ -5,13 +5,13 @@
     :color="true"
   >
     <template #img>
-      <img src="/src/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
+      <img src="/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
     </template>
   </PositionHeader>
 
   <PositionHeader class="header-white-bg sticky box-content z-10" style="border-bottom: 1px solid #f2f2f2;">
     <template #img>
-      <img src="/src/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
+      <img src="/assets/logo.svg" class="xs:w-[100px] md:w-[132px]">
     </template>
   </PositionHeader>
 
