@@ -33,9 +33,9 @@
             >
             <label for="saveId" class="pl-2 cursor-pointer xs:text-[14px] sm:text-[14px] md:text-lg">아이디 저장</label>
         </div>
-        <div id="find-link" class="sm:text-[14px] md:text-lg text-right xs:col-span-8 col-span-6">
-          <router-link to="/" class="pr-4 xs:text-[14px]">아이디 찾기</router-link>
-          <router-link to="/" class="pl-4 xs:text-[14px]">비밀번호 찾기</router-link>
+        <div id="find-link" class="xs:text-[14px] sm:text-[14px] md:text-lg text-right xs:col-span-8 col-span-6">
+          <router-link to="/" class="pr-4">아이디찾기</router-link>
+          <router-link to="/" class="pl-4">비밀번호 찾기</router-link>
         </div>
       </div>
 
