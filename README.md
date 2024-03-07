@@ -1,4 +1,4 @@
-## 🔗 [FreeView](https://amuz-vue-prj.netlify.app/)
+## 🔗 [FreeView](https://amuz-vue3.netlify.app/)
 <br>
 <br>
 
