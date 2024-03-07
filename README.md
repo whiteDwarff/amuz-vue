@@ -1,11 +1,13 @@
-[FreeView](https://amuz-vue-prj.netlify.app/))
+## 🔗 [FreeView](https://amuz-vue-prj.netlify.app/)
+<br>
+<br>
 
 ## ⚡️ Build Tools
-- vite@5
+- vite
 ```ruby
 npm run dev
 ```
 ## ⚙️ Library
 - tailwind
-- unplugin-vue-router
+- [unplugin-vue-router](https://github.com/posva/unplugin-vue-router)
 
