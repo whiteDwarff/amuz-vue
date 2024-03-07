@@ -7,10 +7,10 @@
           <router-link to="/" class="md:mr-[10rem]">
             <img src="/assets/footer-logo.svg" class="xs:w-[100px] md:w-[132px]">
           </router-link>
-            <div class="xs:text-[14px] md:text-base">
+            <div class="xs:text-[14px] md:text-base flex items-center">
               <router-link
                 to="/message/post"
-                class="text-[#EDEDED] mr-20"
+                class="text-[#EDEDED] xs:mr-10 md:mr-20"
               >메세지</router-link>
               <router-link
                 to="/credits/buy"
